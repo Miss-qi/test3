@@ -1,3 +1,4 @@
+
 function collect_same_elements(collection_a, object_b) {
  //在此处写代码
  var arr = new Array();
@@ -8,9 +9,11 @@ function collect_same_elements(collection_a, object_b) {
  			arr[k++]="\""+object_b[j]+"\"";
  		}
  	}
+ 	document.write("[");
+	document.write(arr.join());
+	document.write("]");
 }
-document.write("[");
-document.write(arr.join());
-document.write("]");
+
 module.exports = collect_same_elements;
+
 
